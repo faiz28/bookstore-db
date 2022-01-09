@@ -1,10 +1,10 @@
 <?php
 function connect_db()
 {
-    $host = "ec2-54-196-105-177.compute-1.amazonaws.com";
-    $username = "hslrlryvwddmtp";
-    $password = "2c1607fb8215ebfaf00cc3d7b88b6f53031586b99a341729fd575f771ccf67e8";
-    $dbname = "d55qs3nc85dpum";
+    $host = "ec2-18-204-170-75.compute-1.amazonaws.com";
+    $username = "brxkrfljnfasgs";
+    $password = "f48864252b8dbdfd9c1cb5db0b70db05f5bda709517920865ccaaef393d0001f";
+    $dbname = "d65duhs36gng5m";
     $port = "5432"
 
     try {
