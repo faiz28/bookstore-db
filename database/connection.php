@@ -5,10 +5,10 @@ function connect_db()
     $username = "brxkrfljnfasgs";
     $password = "f48864252b8dbdfd9c1cb5db0b70db05f5bda709517920865ccaaef393d0001f";
     $dbname = "d65duhs36gng5m";
-    $port = "5432"
+    $port = "80"
 
     try {
-        $dsn = "pgsql:host=$host.";port=".$port.";dbname=".$dbname.";user=".$username.";password=".$password.";";
+        $dsn ="pgsql:host=$host;dbname=$dbname";
         $conn = new PDO($dsn, $username, $password);
         // set the PDO error mode to exception
         $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
