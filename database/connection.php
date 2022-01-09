@@ -1,10 +1,10 @@
 <?php
 function connect_db()
 {
-    $host = "localhost";
-    $username = "faiz";
-    $password = "Faiz@6761";
-    $dbname = "bookstore-db";
+    $host = "ec2-54-196-105-177.compute-1.amazonaws.com";
+    $username = "hslrlryvwddmtp";
+    $password = "2c1607fb8215ebfaf00cc3d7b88b6f53031586b99a341729fd575f771ccf67e8";
+    $dbname = "d55qs3nc85dpum";
 
     try {
         $conn = new PDO("mysql:host=$host;dbname=$dbname", $username, $password);
