@@ -1,0 +1,135 @@
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td,
+th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+tr:nth-child(even) {
+    background-color: #dddddd;
+}
+
+.navbar {
+    padding: 24px 0px;
+}
+
+.logo {
+    width: 70%;
+    text-align: left;
+}
+
+.search-container {
+    width: 30%;
+    text-align: right;
+}
+
+form.example input[type=text] {
+    padding: 10px;
+    font-size: 17px;
+    border: 1px solid grey;
+    float: left;
+    width: 80%;
+    background: #f1f1f1;
+}
+
+form.example button {
+    float: left;
+    width: 20%;
+    padding: 10px;
+    background: #2196F3;
+    color: white;
+    font-size: 17px;
+    border: 1px solid grey;
+    border-left: none;
+    cursor: pointer;
+}
+
+form.example button:hover {
+    background: #0b7dda;
+}
+
+form.example::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.create {
+    width: 100%;
+    padding: 13px 0px;
+    text-align: center;
+}
+
+
+/* 404 page */
+
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Fira+Mono:wght@500&display=swap');
+body{
+    height: 95vh;
+    text-align: center;
+    font-family: 'Fira Mono', monospace;
+}
+h1{
+    font-size: 2.5rem;
+    font-family: 'Permanent Marker', cursive;
+}
+div{
+    transform-style: preserve-3d;
+}
+svg{
+    width: clamp(300px , 70% , 600px);
+    height: 500px;
+  
+}
+#rocket{
+    
+    transform: translateY(750px);
+   
+    animation: launch 2s ease-out forwards;
+}
+
+@keyframes launch {
+    from {
+        transform: translateY(750px);
+    }
+    to{
+        perspective: 500px;
+        transform: translateY(0px); 
+    }
+}
+#stars {
+    animation: twinkling 2s linear ;
+}
+@keyframes twinkling {
+
+    from{
+        transform: scale(0);
+    }
+    to{
+        transform: scale(1);
+    }
+}
+.text{
+    opacity: 0;
+    animation:appear 1s ease-in forwards;
+    animation-delay: 1.8s;
+}
+@keyframes appear {
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+a{
+    color:#F66947;
+    text-decoration: none;
+}
+/* 404 page */
