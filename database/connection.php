@@ -8,7 +8,7 @@ function connect_db()
     $port = "5432"
 
     try {
-        $dsn ="pg:psql:host=$host;port=$port;dbname=$dbname";
+        $dsn ="pgsql:host=$host;port=$port;dbname=$dbname";
         $conn = new PDO($dsn, $username, $password);
         // set the PDO error mode to exception
         $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
