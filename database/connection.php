@@ -5,7 +5,7 @@ function connect_db()
     $username = "brxkrfljnfasgs";
     $password = "f48864252b8dbdfd9c1cb5db0b70db05f5bda709517920865ccaaef393d0001f";
     $dbname = "d65duhs36gng5m";
-    $port = "80"
+    $port = "5432"
 
     try {
         $dsn ="psql:host=$host;dbname=$dbname";
