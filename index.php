@@ -6,7 +6,8 @@ $db = connect_db();
 create_table($db);
 // add_data($db);
 
-$query = $_GET['query'];
+
+$query = isset($_GET['query']) ? $_GET['query'] : '';
 $size_of_query = strlen($query);
 if ($size_of_query != 0) {
     $books = search_data($db,$query);
