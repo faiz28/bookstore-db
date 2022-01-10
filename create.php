@@ -3,9 +3,12 @@
 require 'database/connection.php';
 require 'database/operation.php';
 $db = connect_db();
+$data_added = 0;
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 add_data($db,$_POST['title'],$_POST['author'],$_POST['available'],$_POST['pages'],$_POST['isbn']);
+$data_added = 1;
 }
+
 ?>
 
 
@@ -32,7 +35,7 @@ add_data($db,$_POST['title'],$_POST['author'],$_POST['available'],$_POST['pages'
     <!-- show new item -->
     <div class="container">
         <div class="row">
-            <?php if ($is_added == 1) : ?>
+            <?php if ($data_added == 1) : ?>
             <div class="col-md-12">
                 <h3 class="btn btn-success">New item added:</h3>
             </div>
